@@ -1,11 +1,11 @@
 import { useCallback, useState } from 'react'
 import {
-	YMap,
-	YMapComponentsProvider,
-	YMapCustomClusterer,
-	YMapDefaultFeaturesLayer,
-	YMapDefaultSchemeLayer,
-	YMapMarker
+  YMap,
+  YMapComponentsProvider,
+  YMapCustomClusterer,
+  YMapDefaultFeaturesLayer,
+  YMapDefaultSchemeLayer,
+  YMapMarker
 } from 'ymap3-components'
 import custom from '../../assets/mapStyle/customization.json'
 import { location as LOCATION, apiKey, points } from './helpers.ts'
