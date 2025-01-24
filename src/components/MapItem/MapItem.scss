@@ -1,0 +1,13 @@
+.map__info-item{
+	padding: 1px 20px;
+	font: var(--font-xxs);
+	color: var(--light-black);
+	border-radius: 20px;
+	border: 1px solid var(--secondary);
+	display: inline-block;
+	span{
+		color: var(--primary);
+		margin-left: 5px;
+	}
+
+}

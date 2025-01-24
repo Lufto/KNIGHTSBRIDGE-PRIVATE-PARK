@@ -1,0 +1,244 @@
+.promo{
+	position: relative;
+	background: var(--bg-light-grey);
+	padding: 70px 0 80px 0;
+	&__info{
+		display: flex;
+		gap: 60px;
+		ul{
+			display: flex;
+			flex-direction: column;
+			gap:40px;
+			list-style: none;
+		}
+		&-item{
+			h3{
+				font: var(--font-xl);
+				color: var(--light-black);
+				span{
+					font: var(--font-m-bold);
+				}
+			}
+			p{
+				font: var(--font-xs);
+				color: var(--light-grey);
+			}
+		}
+		&-text{
+			max-width: 319px;
+			font: var(--font-s);
+			color: var(--light-black);
+
+		}
+	}
+	&__open-btn{
+		margin-top: 36px;
+		background: none;
+		position: relative;
+		border: none;
+		font: var(--font-button);
+		color: var(--primary);
+		display: none;
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			background: var(--primary);
+			height: 2px;
+			width: 100%;
+		}
+	}
+	&__picture{
+		position: absolute;
+		top: -260px;
+    right: -100px;
+		display: flex;
+		gap: 30px;
+		flex-direction: column;
+		width: 615px;
+		min-height: 720px;
+		height: 250%;
+		&_first{
+			max-width: 615px;
+			max-height: 480px;
+			width: 100%;
+			height: 100%;
+			background: url(/src/assets/image/lama.svg) no-repeat,	url(/src/assets/image/pattern.svg) no-repeat;
+			background-size: auto, cover;
+			background-position: bottom left 200px, top left 200px;
+			background-color: var(--bg-gray);
+		}
+		&-wrap{
+			display: flex;
+			gap: 10px;
+			max-height: 210px;
+			width: 100%;
+			height: 100%;
+		}
+		a{
+
+			text-decoration: none;
+			font: var(--font-s-light);
+			color: var(--white);
+		}
+		&_second{
+			max-width: 232px;
+			display: flex;
+			align-items: end;
+			text-align: center;
+			width: 100%;
+			&:first-of-type{
+				background: no-repeat url(/src/assets/image/card1.png);
+				background-size: contain;
+				padding: 25px;
+			}
+			&:last-of-type{
+				background: no-repeat url(/src/assets/image/card2.png);
+				background-size: contain;
+				padding: 25px 25px 35px 25px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.promo{
+		&__picture{
+			right: calc((100vw - 1240px) / 2 * -1);
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+	.active .promo {
+		&__picture{
+			top:500px;
+		}
+		&__open-btn{
+			margin-top: 66px;
+		}
+		&__info-item:last-of-type{
+			opacity: 1;
+			height: auto;
+		}
+	}
+
+	.promo{
+		.container{
+			flex-direction: column;
+			padding-bottom: 700px;
+		}
+		&__info{
+				&-item:last-of-type{
+					transition: all 1s;
+					opacity: 0;
+					height: 0;
+					overflow: hidden;
+			}
+		}
+		&__open-btn{
+			display: block;
+		}
+		&__picture{
+			right: 50%;
+			transform: translateX(50%);
+			top:430px;
+			height: 60%;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.promo{
+		padding: 40px 0;
+		&__info{
+			flex-direction: column;
+			gap: 35px;
+			ul{
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: 34px;
+			}
+			&-text{
+				max-width: 100%;
+			}
+		}
+		&__picture{
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			&_first{
+				width: calc(100vw - 30px);
+
+			}
+			&-wrap{
+				width: calc(100vw - 30px);
+			}
+			&_second{
+				max-width: 232px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				width: 100%;
+				&:first-of-type{
+					background: no-repeat url(/src/assets/image/card1.png);
+					background-size: contain;
+					padding: 25px 19px;
+				}
+				&:last-of-type{
+					background: no-repeat url(/src/assets/image/card2.png);
+					background-size: contain;
+					padding: 25px 19px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 445px) {
+	.promo{
+		padding: 40px 0;
+		&__info{
+			flex-direction: column;
+			gap: 35px;
+			ul{
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: 34px;
+			}
+			&-text{
+				max-width: 100%;
+			}
+		}
+		&__picture{
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			top: 500px;
+			&_first{
+				width: calc(100vw - 30px);
+
+			}
+			&-wrap{
+				width: calc(100vw - 30px);
+			}
+			&_second{
+				max-width: 232px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				width: 100%;
+				&:first-of-type{
+					background: no-repeat url(/src/assets/image/card1.png);
+					background-size: contain;
+					padding: 25px 19px;
+				}
+				&:last-of-type{
+					background: no-repeat url(/src/assets/image/card2.png);
+					background-size: contain;
+					padding: 25px 19px;
+				}
+			}
+		}
+	}
+}

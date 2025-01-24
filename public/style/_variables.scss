@@ -1,0 +1,34 @@
+:root{
+	--primary: #7A1B1B;
+	--secondary: #C79791;
+
+	--white: #FFF; 
+
+	--light-grey: #777;
+	--gary: #333;
+
+	--bg-gray: #484848;
+	--bg-light-grey: #F4F5F5;
+
+	--light-black: #303030;
+	--black: #08131F;
+
+
+	--Baron-Neue: "Baron Neue", sans-serif;
+	--Lato: "Lato", sans-serif;
+
+  --font-xxs: 400 11px / 26px var(--Lato);
+  --font-xs: 400 14px / 26px var(--Lato);
+	--font-s: 400 16px / 24px var(--Lato);
+	--font-s-light: 400 16px / 20px var(--Lato);
+	--font-s-bold: 700 16px / 24px var(--Lato);
+
+	--font-m: 400 16px / 24px var(--Lato);
+  --font-m-bold: 700 16px / 24px var(--Lato);
+
+	--font-l: 700 22px / 30px var(--Baron-Neue);
+	--font-xl: 700 30px / 24px var(--Lato);
+  --font-xxl: 700 36px / 44px var(--Baron-Neue);
+
+	--font-button: 400 18px / 0px var(--Baron-Neue);
+}

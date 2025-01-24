@@ -1,0 +1,74 @@
+.map {
+  height: 500px;
+  width: 100%;
+	max-width: 930px;
+	.mark {
+		position: relative;
+		top: -35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.circle {
+		border-radius: 50%;
+		border: 5px solid rgba(255, 255, 255, 0.192);
+		position: relative;
+		width: 38px;
+		height: 38px;
+		&::before{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			bottom: -6px;
+			width: 45px;
+			height: 10px;
+			background: url(/src/assets/icons/Vector.svg) no-repeat center;
+		}
+	}
+
+	.main {
+		background: url(/src/assets/icons/lama.svg) no-repeat center;
+		background-size: contain;
+		width: 45px;
+		height: 45px;
+	}
+
+	.cafe {
+		background: url(/src/assets/icons/coffee-cup.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+
+	.health {
+		background: url(/src/assets/icons/hospital-sign.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+
+	.shop {
+		background: url(/src/assets/icons/cart.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+
+	.education {
+		background: url(/src/assets/icons/mortarboard.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+	.kindergarten {
+		background: url(/src/assets/icons/baby-face.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+	.movie {
+		background: url(/src/assets/icons/video-camera.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+	.beauty {
+		background: url(/src/assets/icons/lipstick.svg) var(--secondary) no-repeat center;
+		background-size: 60%;
+	}
+}
+
+@media (max-width: 1240px) {
+	.map {
+		max-width: 100%;
+	}
+}
